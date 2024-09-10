@@ -105,7 +105,7 @@ export function Header() {
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <NavLink to={"/"} >
-            <img className=" w-32" src="public/3-Photoroom.png" alt="home" />
+            <img className=" w-32" src="https://raw.githubusercontent.com/kinddevs2024/Umarbek-Ulugbekov-s-Portfolio/main/public/3-Photoroom.png" alt="home" />
           </NavLink>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
