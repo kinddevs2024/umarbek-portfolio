@@ -7,17 +7,12 @@
 }
 
 .dark-mode {
-  background-color: #zzz;
+  background-color: #000000;
   color: #fff;
+  
 }
 
-button {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-}
+
 ::-webkit-scrollbar {
     width: 0;
   }

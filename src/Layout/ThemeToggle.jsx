@@ -32,7 +32,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-[url('https://img.icons8.com/ios-filled/50/moon.png')] active:animate-spin duration-300 h-8 w-20 dark:bg-[url('https://img.icons8.com/ios-filled/50/sun--v1.png')] bg-no-repeat bg-contain bg-center text-gray-800 dark:text-gray-200 px-10 py-2 rounded-lg"
+      className="bg-[url('https://img.icons8.com/ios-filled/50/moon.png')] active:animate-spin duration-300 h-8 w-10 dark:bg-[url('https://img.icons8.com/ios-filled/50/sun--v1.png')] bg-no-repeat bg-contain bg-center text-gray-800 dark:text-gray-200 px-10 py-2 rounded-lg"
     >
       {theme === "dark" ? "" : ""}
     </button>
