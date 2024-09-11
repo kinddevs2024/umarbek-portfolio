@@ -20,7 +20,12 @@ export default withMT({
         '2xl': '6rem',
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        'bg-dark': '#090F13',
+        'bg-none': '#3D606E',
+      },
+    },
   },
   plugins: [],
   
