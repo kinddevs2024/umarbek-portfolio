@@ -7,7 +7,7 @@ const Loyaout = ({children}) => {
   return (
     <>
     <div className='bg-white dark:bg-bg-dark duration-300 text-black dark:text-white'>
-     <Header/>
+      <Header/>
     {children}
     <Footer/> 
     </div>

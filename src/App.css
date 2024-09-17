@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
 .app-container {
   max-width: 800px;
   background-color: #f4f4f4;
@@ -9,44 +11,46 @@
 .dark-mode {
   background-color: #000000;
   color: #fff;
-  
 }
 
-
 ::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0px #ffffff; 
-    border-radius: 0px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    width: 0;
-    height: 0;
-    border-radius: 0px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff; 
-  }
+  width: 0;
+}
 
-  /* Tailwind CSS orqali qo'shimcha sinf */
+* {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px #ffffff;
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+/* Tailwind CSS orqali qo'shimcha sinf */
 .scrollbar-hidden::-webkit-scrollbar {
-    height: 0;
-    width: 0;
+  height: 0;
+  width: 0;
 }
 
 .scrollbar-hidden {
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* Internet Explorer and Edge */
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer and Edge */
 }
-
 
 @keyframes drop {
   0% {
@@ -114,3 +118,8 @@
   left: 20px;
   animation: drop 6s ease-in-out infinite;
 }
+
+
+
+/* header */
+

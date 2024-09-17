@@ -6,7 +6,7 @@ const Loader = () => {
     }
     return (
         <div>
-            <div id='id' className='w-screen h-screen     fixed top-0 z-0   flex bg-white dark:bg-bg-dark justify-center items-center'>
+            <div id='id' className='w-screen h-screen     fixed top-0 z-50  flex bg-white dark:bg-bg-dark justify-center items-center'>
                 <div id='demo' class="lava-lamp ">
                     <div class="bubble"></div>
                     <div class="bubble1"></div>

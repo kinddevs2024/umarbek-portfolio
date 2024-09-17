@@ -1,8 +1,7 @@
-import { Typography , } from "@material-tailwind/react";
-import React from 'react'
+import { Typography, } from "@material-tailwind/react";
+import React, { useEffect } from 'react'
 import { Link, NavLink } from "react-router-dom";
 
- 
 const LINKS = [
   {
     title: "Product",
@@ -17,17 +16,18 @@ const LINKS = [
     items: ["Blog", "Newsletter", "Events", "Help center"],
   },
 ];
- 
+
 const currentYear = new Date().getFullYear();
- 
+
+
 export function Footer() {
   return (
-    <footer className=" mt-5 relative dark:text-white w-full">
+    <footer data-aos="zoom-in" className=" mt-5 relative dark:text-white w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="dark:text-white mb-6">  
+          <Typography variant="h5" className="dark:text-white mb-6">
             <NavLink to="/product" className="text-gray-300 hover:text-gray-400 dark:text " >
-               Material Tailwind
+              Material Tailwind
             </NavLink>
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
