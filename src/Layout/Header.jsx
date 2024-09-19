@@ -161,6 +161,8 @@ export function Header() {
             </svg>
           )}
         </IconButton>
+        <a href="#fff" className='duration-600 '>go</a>
+
       </div>
 
 
