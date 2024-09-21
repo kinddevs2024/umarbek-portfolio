@@ -6,11 +6,10 @@ export function Home() {
 
   return (
     <>
-      <div className=' '>
+      <div className='   '>
         <Hero/>
         <Links />
         < img className=' container' src="https://cdn.prod.website-files.com/614716f50b4f49202fdd0087/646c83f933925057cfe27156_image.jpg" alt="" />
-        {/* <a href="#fff" className='duration-300 '>go</a> */}
       </div>
     </>
   );
