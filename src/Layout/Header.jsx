@@ -8,6 +8,13 @@ import {
 } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import { MenuDefault } from "../utils/Switcherbtn";
+import { useTranslation } from 'react-i18next';
+
+
+
+
+
 
 export function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -18,6 +25,7 @@ export function Header() {
       () => window.innerWidth >= 960 && setOpenNav(false),
     );
   }, []);
+  const { t } = useTranslation("global");
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -41,7 +49,7 @@ export function Header() {
         </svg>
 
         <NavLink to={"/projects"} className="flex items-center">
-          projects
+          {t("projects")}
         </NavLink>
       </Typography>
       <Typography
@@ -65,7 +73,8 @@ export function Header() {
           />
         </svg>
         <NavLink to={"/about_me"} className="flex items-center">
-          about me
+          {t("aboutme")}
+
         </NavLink>
       </Typography>
       <Typography
@@ -97,8 +106,11 @@ export function Header() {
     </ul>
   );
 
+
+
+
   return (
-    <Navbar  className=" sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
+    <Navbar className=" backdrop-blur-sm 	 sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
       <div className="  mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -117,9 +129,11 @@ export function Header() {
           <div
             variant="gradient"
             size="sm"
-            className="hidden lg:inline-block"
+            className="hidden lg:flex justify-center items-center"
           >
             <ThemeToggle />
+            <MenuDefault />
+
 
           </div>
 
