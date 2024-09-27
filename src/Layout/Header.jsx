@@ -100,7 +100,8 @@ export function Header() {
           />
         </svg>
         <NavLink to={"/get_in_touch"} className="flex items-center">
-          get in touch
+          {t("getintouch")}
+
         </NavLink>
       </Typography>
     </ul>
@@ -133,6 +134,7 @@ export function Header() {
           >
             <ThemeToggle />
             <MenuDefault />
+
 
 
           </div>
@@ -182,7 +184,12 @@ export function Header() {
       <MobileNav open={openNav}>
         <div className="ml-[10%]  flex justify-between  items-center  ">
           {navList}
-          <ThemeToggle />
+          <div className="flex flex-col  justify-center items-center gap-5">
+            <ThemeToggle />
+            <MenuDefault />
+          </div>
+
+
         </div>
       </MobileNav>
     </Navbar>
