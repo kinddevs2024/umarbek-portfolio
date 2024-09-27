@@ -119,8 +119,8 @@ export function Header() {
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <NavLink to={"/"} className="flex gap-3" >
-            <img className=" w-auto h-[30px]" src="public/3-Photoroom.png" alt="home" />
-            <img className=" w-auto h-[30px]" src="public/1-Photoroom.png" alt="home" />
+            <img className=" w-auto h-[30px]" src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/3-Photoroom.png?raw=true" alt="home" />
+            <img className=" w-auto h-[30px]" src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/1-Photoroom.png?raw=true" alt="home" />
           </NavLink>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
