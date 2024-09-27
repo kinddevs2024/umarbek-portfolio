@@ -1,6 +1,6 @@
 import React from 'react'
 const Loader = () => {
-    const myTimeout = setTimeout(myGreeti,  0);
+    const myTimeout = setTimeout(myGreeti,  2500);
     function myGreeti() {
         document.getElementById("id").classList.add("hidden");
     }
