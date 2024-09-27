@@ -2,6 +2,7 @@ import { Button } from "@material-tailwind/react";
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import img1 from "/public/uzb.png"
+import { document } from "postcss";
 
 
 function LanguageSwitcher() {
@@ -12,6 +13,8 @@ function LanguageSwitcher() {
     useEffect(() => {
         if (!lang) {
             localStorage.setItem("language", "en");
+        } else {
+            localStorage.getItem("language");
         }
     }, []);
 
@@ -20,6 +23,8 @@ function LanguageSwitcher() {
         localStorage.setItem("language", selectedLanguage);
         i18n.changeLanguage(selectedLanguage);
     };
+
+    
 
     return (
         <div className="relative max-w-[120px] text-secondary sm:flex hidden">

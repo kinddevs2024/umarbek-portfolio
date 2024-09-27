@@ -30,9 +30,14 @@ const resources = {
 
 
 
-const langu = localStorage.setItem("language", "en");
+// if (!lang) {
+//     localStorage.setItem("language", "en");
 
-const lang = localStorage.getItem("language");
+// } else {
+//     localStorage.getItem("language");
+
+// }
+
 
 
 
@@ -40,7 +45,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        lng: lang,
+        lng: localStorage.getItem("language"),
         interpolation: {
             escapeValue: false,
         },

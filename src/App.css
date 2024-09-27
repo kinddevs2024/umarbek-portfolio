@@ -12,6 +12,8 @@
   color: #fff;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -121,3 +123,12 @@
 
 /* header */
 
+
+
+.content {
+  margin-top: 20px;
+}
+
+.blurred .content {
+  filter: blur(5px); /* Apply a blur effect */
+}
