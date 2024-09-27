@@ -118,10 +118,9 @@ export function Header() {
           href="#"
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
-          <NavLink to={"/"} >
-            <img className=" w-32" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/main/public/2-Photoroom.png" alt="home" />
-            {/* https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/main/public/3-Photoroom.png */}
-            {/* https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/main/public/1-Photoroom.png */}
+          <NavLink to={"/"} className="flex gap-3" >
+            <img className=" w-auto h-[30px]" src="public/3-Photoroom.png" alt="home" />
+            <img className=" w-auto h-[30px]" src="public/1-Photoroom.png" alt="home" />
           </NavLink>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
@@ -199,4 +198,4 @@ export function Header() {
 
 
 
-export default Header
+export default Header;

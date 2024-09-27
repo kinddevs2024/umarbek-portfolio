@@ -26,7 +26,14 @@ const resources = {
     },
 };
 
+
+
+
+
+const langu = localStorage.setItem("language", "en");
+
 const lang = localStorage.getItem("language");
+
 
 
 i18n
