@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Links = () => {
   return (
-    <div id='fff' className='w-screen h-[53px] absolute  flex justify-center items-center border-black dark:bg-white bg-bg-dark  duration-300'>
+    <div id='fff' className='w-screen h-[53px]   flex justify-center items-center border-black dark:bg-white   duration-300'>
       <div className='w-[70%] container flex flex-row gap-[20%] justify-center items-center'>
         <Link to={"https://github.com/uumarbek"}>
           <img className='w-[25px] bg-white rounded-full' src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/main/public/github.png" alt="githup" />

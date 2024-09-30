@@ -9,4 +9,4 @@ useEffect(() => {
 }, []);
 
 
-export default lang
+export default lang;

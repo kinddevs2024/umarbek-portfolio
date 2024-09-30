@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import {
   Navbar,
   MobileNav,
@@ -10,6 +10,8 @@ import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { MenuDefault } from "../utils/Switcherbtn";
 import { useTranslation } from 'react-i18next';
+import gsap from "gsap";
+
 
 
 
@@ -17,6 +19,14 @@ import { useTranslation } from 'react-i18next';
 
 
 export function Header() {
+
+  useEffect(() =>{
+    gsap.to(".heder",{rotation:0,  delay:2});
+    gsap.to(".heder",{ scale:1,  delay:3},);
+    gsap.to(".heder",{ scale:0 , delay:0},);
+
+});
+
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -28,7 +38,7 @@ export function Header() {
   const { t } = useTranslation("global");
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4  flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -111,7 +121,7 @@ export function Header() {
 
 
   return (
-    <Navbar className=" backdrop-blur-sm 	 sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
+    <Navbar className=" backdrop-blur-sm heder	 sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
       <div className="  mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -119,8 +129,8 @@ export function Header() {
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <NavLink to={"/"} className="flex gap-3" >
-            <img className=" w-auto h-[30px]" src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/3-Photoroom.png?raw=true" alt="home" />
-            <img className=" w-auto h-[30px]" src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/1-Photoroom.png?raw=true" alt="home" />
+            <img className=" w-auto h-[30px]" src="/public/3-Photoroom.png" alt="home" />
+            <img className=" w-auto h-[30px]" src="/public/1-Photoroom.png" alt="home" />
           </NavLink>
         </Typography>
         <div className="hidden lg:block">{navList}</div>

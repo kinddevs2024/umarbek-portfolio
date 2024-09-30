@@ -1,5 +1,6 @@
 import { Typography, } from "@material-tailwind/react";
 import React, { useEffect } from 'react'
+import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 
 const LINKS = [
@@ -21,39 +22,32 @@ const currentYear = new Date().getFullYear();
 
 
 export function Footer() {
+  const { t } = useTranslation("global");
+
   return (
-    <footer data-aos="zoom-in" className=" mt-5 relative dark:text-white w-full">
+    <footer data-aos="zoom-in" className=" mt-5 relative h-auto dark:text-white w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="dark:text-white mb-6">
             <NavLink to="/product" className="text-gray-300 hover:text-gray-400 dark:text " >
-              Material Tailwind
+              Umarbek Portfolio
             </NavLink>
           </Typography>
-          <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-3 font-medium dark:text-white opacity-40"
-                >
-                  {title}
-                </Typography>
-                {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="/"
-                      color="gray"
-                      className="py-1.5 font-normal transition-colors dark:text-white hover:text-blue-gray-900"
-                    >
-                      {link}
-                    </Typography>
-                  </li>
-                ))}
-              </ul>
-            ))}
+          <div className="grid grid-cols-3  justify-between gap-[40%]">
+            <ul>
+              <li>{t("myprojects")}</li>
+              <li>Vetvare</li>
+              <li>Pixer</li>
+              <li>Portfolio</li>
+              <li>Easy Bank</li>
+            </ul>
+            <ul>
+              <li>{t("contacts")}</li>
+              <li>telegram</li>
+              <li>Instagram</li>
+              <li>yutube</li>
+              <li>github</li>
+            </ul>
           </div>
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
@@ -61,8 +55,7 @@ export function Footer() {
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 dark:text-white md:mb-0"
           >
-            &copy; {currentYear} <Link to={"https://github.com/kinddevs2024"}>Material Tailwind</Link>. All
-            Rights Reserved.
+            &copy; {currentYear} <Link to={"https://github.com/kinddevs2024"}>Umarbek portfolio</Link>
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 dark:text-white sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
