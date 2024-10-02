@@ -8,7 +8,7 @@ const Hero = () => {
      
     useLayoutEffect(() =>{
         gsap.to("img",{rotation:0,  delay:2});
-        gsap.to("h1",{ scale:1,  delay:3},);
+        gsap.to("h1",{ scale:1,  delay:1.4},);
         gsap.to("h1",{ scale:0 , delay:0},);
 
     });

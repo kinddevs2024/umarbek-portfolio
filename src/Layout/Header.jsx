@@ -22,10 +22,12 @@ export function Header() {
 
   useEffect(() =>{
     gsap.to(".heder",{rotation:0,  delay:2});
-    gsap.to(".heder",{ scale:1,  delay:3},);
+    gsap.to(".heder",{ scale:1,  delay:1.5},);
     gsap.to(".heder",{ scale:0 , delay:0},);
 
 });
+
+
 
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -38,7 +40,7 @@ export function Header() {
   const { t } = useTranslation("global");
 
   const navList = (
-    <ul className="mt-2 mb-4  flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4  flex flex-col gap-2 cursor-none lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -58,7 +60,7 @@ export function Header() {
           />
         </svg>
 
-        <NavLink to={"/projects"} className="flex items-center">
+        <NavLink to={"/projects"} className="flex cursor-none items-center">
           {t("projects")}
         </NavLink>
       </Typography>
@@ -82,7 +84,7 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/about_me"} className="flex items-center">
+        <NavLink to={"/about_me"} className="flex cursor-none items-center">
           {t("aboutme")}
 
         </NavLink>
@@ -109,7 +111,7 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/get_in_touch"} className="flex items-center">
+        <NavLink to={"/get_in_touch"} className="flex cursor-none items-center">
           {t("getintouch")}
 
         </NavLink>
@@ -126,11 +128,11 @@ export function Header() {
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
+          className="mr-4 cursor-none py-1.5 font-medium"
         >
-          <NavLink to={"/"} className="flex gap-3" >
-            <img className=" w-auto h-[30px]" src="/public/3-Photoroom.png" alt="home" />
-            <img className=" w-auto h-[30px]" src="/public/1-Photoroom.png" alt="home" />
+          <NavLink to={"/"} className="flex gap-3 cursor-none" >
+            <img className=" w-auto h-[30px]" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/3-Photoroom.png" alt="home" />
+            <img className=" w-auto h-[30px]" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/1-Photoroom.png" alt="home" />
           </NavLink>
         </Typography>
         <div className="hidden lg:block">{navList}</div>

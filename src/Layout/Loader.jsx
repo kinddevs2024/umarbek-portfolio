@@ -3,13 +3,13 @@ import React, { useLayoutEffect } from 'react'
 const Loader = () => {
 
     useLayoutEffect(() =>{
-        gsap.to(".loader",{rotation:0,  delay:3});
-        gsap.to(".loader",{ scale:1,  delay:3},);
-        gsap.to(".loader",{ scale:0 , delay:1.5},);
+        gsap.to(".loader",{rotation:0,});
+        gsap.to(".loader",{ scale:1, },);
+        gsap.to(".loader",{ scale:0 , delay:1},);
 
     });
 
-    const myTimeout = setTimeout(myGreeti, 3000);
+    const myTimeout = setTimeout(myGreeti, 1500);
     function myGreeti() {
         document.getElementById("id").classList.add("hidden");
     }
