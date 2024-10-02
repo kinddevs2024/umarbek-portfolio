@@ -11,14 +11,14 @@ const Projects = () => {
   const data = [
     {
       imageLink:
-        "public/project1.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project1.png",
       p: "HTML 58.1% CSS 41.9%",
       link: "https://github.com/kinddevs2024/NOICELAND",
       name: "NOICELAND"
     },
     {
       imageLink:
-        "public/project2.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project2.png",
       p: "HTML 53.1% CSS 46.9%",
       link: "https://github.com/kinddevs2024/DECBASE",
       name: "DECBASE"
@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/project3.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project3.png",
       p: "CSS 51.0% HTML 49.0%",
       link: "https://github.com/kinddevs2024/cofee",
       name: "CAFENA"
@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/project4.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project4.png",
       p: "CSS 65.4% HTML 34.6%",
       link: "https://github.com/kinddevs2024/easy-bank",
       name: "easy bank"
@@ -42,7 +42,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/project5.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project5.png",
       p: "JavaScript 94.1% CSS 4.0% HTML1.9%",
       link: "https://github.com/kinddevs2024/shablon",
       name: "shablon"
