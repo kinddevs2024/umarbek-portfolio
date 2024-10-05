@@ -11,7 +11,7 @@ const Links = () => {
         <Link to={"https://www.instagram.com/uumar_bek/"}>
           <img className='w-[25px] bg-white rounded-full cursor-none' src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/instagram.png?raw=true" alt="githup" />
         </Link>
-        <Link to={"tel:+998 90 978 08 18"}>
+        <Link to={"https://t.me/kinddevs"}>
           <img className='w-[25px] bg-white rounded-fullx cursor-none' src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/telegram.png?raw=true" alt="githup" />
         </Link>
       </div>

@@ -7,6 +7,7 @@ const global = {
     getintouch : "свяжитесь сам мной",
     Aboutsme : "Обо мне",
     myprojects : "мои проекты",
+    order : "Заказать сайт",
     contacts : "контакты",
 
 }

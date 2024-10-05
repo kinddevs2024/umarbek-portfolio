@@ -8,6 +8,7 @@ const global = {
     myprojects : "my projects",
     Aboutsme : "Abouts me",
     contacts : "contacts",
+    order : "Give order",
 }
 
 export default global;

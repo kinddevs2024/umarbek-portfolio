@@ -28,6 +28,21 @@ export function Header() {
 });
 
 
+useEffect(() => {
+  const handleScroll = () => {
+      if (window.scrollY > 50) {
+          setIsScrolled(true);
+      } else {
+          setIsScrolled(false);
+      }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
 
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -60,9 +75,9 @@ export function Header() {
           />
         </svg>
 
-        <NavLink to={"/projects"} className="flex cursor-none items-center">
+        <a href={"/projects"} className="flex cursor-none items-center">
           {t("projects")}
-        </NavLink>
+        </a>
       </Typography>
       <Typography
         as="li"
@@ -84,10 +99,10 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/about_me"} className="flex cursor-none items-center">
+        <a href={"/about_me"} className="flex cursor-none items-center">
           {t("aboutme")}
 
-        </NavLink>
+        </a>
       </Typography>
       <Typography
         as="li"
@@ -111,10 +126,10 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/get_in_touch"} className="flex cursor-none items-center">
+        <a href="/get_in_touch" className="flex cursor-none items-center">
           {t("getintouch")}
 
-        </NavLink>
+        </a>
       </Typography>
     </ul>
   );
@@ -123,17 +138,17 @@ export function Header() {
 
 
   return (
-    <Navbar className=" backdrop-blur-sm heder	 sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
+    <Navbar on className=" backdrop-blur-sm heder	 sticky top-0 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
       <div className="  mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 cursor-none py-1.5 font-medium"
         >
-          <NavLink to={"/"} className="flex gap-3 cursor-none" >
+          <a href="/" className="flex gap-3 cursor-none" >
             <img className=" w-auto h-[30px]" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/3-Photoroom.png" alt="home" />
             <img className=" w-auto h-[30px]" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/1-Photoroom.png" alt="home" />
-          </NavLink>
+          </a>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className="flex items-center gap-x-1">
@@ -180,9 +195,7 @@ export function Header() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+              <path strokeLinecap="round" strokeLinejoin="round"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>

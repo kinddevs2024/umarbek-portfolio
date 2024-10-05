@@ -13,7 +13,8 @@ const Loyaout = ({ children }) => {
         <Header />
         {children}
         <Footer />
-        <Cursor 
+        <div className=' hidden sm:flex'>
+         <Cursor 
         size='xl'
         hasDot
         isHollow
@@ -26,7 +27,9 @@ const Loyaout = ({ children }) => {
         mixBlendMode
         
         zIndex={20}
-         />
+         /> 
+        </div>
+        
       </div>
 
     </>

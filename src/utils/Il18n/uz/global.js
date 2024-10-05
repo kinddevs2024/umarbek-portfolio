@@ -7,6 +7,7 @@ const global = {
     myprojects : "mening loyihalarim",
     getintouch : "bog'laning",
     Aboutsme : "Men haqimda",
+    order : "Buyutma berish",
     contacts : "kontaktlar",
 
 }

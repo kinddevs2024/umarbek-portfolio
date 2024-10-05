@@ -38,11 +38,37 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="dark:text-white mb-6">
-            <NavLink to="/product" className="text-gray-300 hover:text-gray-400 cursor-none dark:text " >
+            <a href="/" className="text-gray-300 hover:text-gray-400 cursor-none dark:text " >
               Umarbek Portfolio
-            </NavLink>
+            </a>
           </Typography>
-          <div className="grid grid-cols-3 cursor-none justify-between gap-[40%]">
+
+          <div className="grid grid-cols-3 justify-between gap-4">
+            {LINKS.map(({ title, items }) => (
+              <ul key={title}>
+                <Typography
+                  variant="small"
+                  color="blue-gray text-gray-900 dark:text-gray-300"
+                  className="mb-3 font-medium opacity-40"
+                >
+                  {title}
+                </Typography>
+                {items.map((link) => (
+                  <li key={link}>
+                    <Typography
+                      as="a"
+                      href="#"
+                      color="gray"
+                      className="py-1.5 font-normal transition-colors text-gray-800 dark:text-gray-400 hover:text-blue-gray-900"
+                    >
+                      {link}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+          {/* <div className="grid grid-cols-3 cursor-none justify-between gap-[40%]">
             <ul>
               <li><a className="cursor-none "  href="/projects">{t("myprojects")}</a></li>
               <li>Vetvare</li>
@@ -57,7 +83,7 @@ export function Footer() {
               <li>yutube</li>
               <li>github</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography 
@@ -66,6 +92,7 @@ export function Footer() {
           >
             &copy; {currentYear} <Link className="cursor-none" to={"https://github.com/kinddevs2024"}>Umarbek portfolio</Link>
           </Typography>
+          
           <div className="flex gap-4 text-blue-gray-900 dark:text-white sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

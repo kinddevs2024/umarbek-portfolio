@@ -14,14 +14,21 @@ const Projects = () => {
         "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project1.png",
       p: "HTML 58.1% CSS 41.9%",
       link: "https://github.com/kinddevs2024/NOICELAND",
-      name: "NOICELAND"
+      name: "NOICELAND",
+      linksite : "https://noiceland-ashy-gamma.vercel.app/",
+      data : "data: 2023.02.16",
+
     },
     {
       imageLink:
         "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project2.png",
       p: "HTML 53.1% CSS 46.9%",
       link: "https://github.com/kinddevs2024/DECBASE",
-      name: "DECBASE"
+      name: "DECBASE",
+      linksite : "https://decbase-two.vercel.app/",
+      data : "data: 2023.02.21",
+
+
 
     },
     {
@@ -29,7 +36,10 @@ const Projects = () => {
         "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project3.png",
       p: "CSS 51.0% HTML 49.0%",
       link: "https://github.com/kinddevs2024/cofee",
-      name: "CAFENA"
+      name: "CAFENA",
+      linksite : "https://cofee-five.vercel.app/",
+      data : "data: 2023.03.07",
+
 
     },
     {
@@ -37,7 +47,9 @@ const Projects = () => {
         "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project4.png",
       p: "CSS 65.4% HTML 34.6%",
       link: "https://github.com/kinddevs2024/easy-bank",
-      name: "easy bank"
+      name: "easy bank",
+      linksite : "https://easy-bank-phi-jade.vercel.app/",
+      data : "data: 2023.03.17",
 
     },
     {
@@ -45,7 +57,21 @@ const Projects = () => {
         "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/project5.png",
       p: "JavaScript 94.1% CSS 4.0% HTML1.9%",
       link: "https://github.com/kinddevs2024/shablon",
-      name: "shablon"
+      name: "shablon",
+      linksite : "https://shablon-beta.vercel.app/",
+      data : "data: 2023.04.08",
+
+
+    },
+    {
+      imageLink:
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/canculator.png",
+      p: "JavaScript 94.1% CSS 4.0% HTML1.9%",
+      link: "https://github.com/kinddevs2024/Canculator",
+      name: "shablon",
+      linksite : "https://canculator-swart.vercel.app/",
+      data : "data: 2023.04.12",
+
 
     },
 
@@ -66,7 +92,7 @@ const Projects = () => {
 
 
 
-        {data.map(({ imageLink, p, link, name }, index) => (
+        {data.map(({ imageLink, p, link, name , linksite , data }, index) => (
           <div key={index} className='flex flex-wrap  m-4'>
 
             <aside class="bg-black text-white aside flex flex-wrap container p-6 rounded-lg w-full max-w-lg font-mono">
@@ -81,9 +107,9 @@ const Projects = () => {
               <div class="mt-4">
                 <Link to={link}><p class="text-green-400  cursor-none">$ npm install project</p></Link>
                 <p class="text-white"></p>
-                <p class="text-white">added 1 package, and audited 2 packages in 3s</p>
-                <p class="text-green-400">{p}</p>
-                <img src={imageLink} alt="" />
+                <p class="text-white">{data}</p>
+                <Link to={link}><p class="text-green-400 cursor-none">{p}</p></Link>
+                <Link to={linksite}><img className='cursor-none' src={imageLink} alt="" /></Link>
               </div>
             </aside>
           </div>

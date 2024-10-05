@@ -2,6 +2,8 @@ import gsap from 'gsap';
 import React, { useEffect, useLayoutEffect } from 'react'
 import {  } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Button } from "@material-tailwind/react";
+
 
 const Hero = () => {
     const { t } = useTranslation("global");
@@ -19,11 +21,12 @@ const Hero = () => {
     return (
         <div>
             <section className='container'>
-                <div className='flex justify-center mb-[5%] flex-col gap-10 items-center w-full mt-[11%] '>
+                <div className='flex justify-center mb-[5%] flex-col gap-5 items-center w-full mt-[10%] '>
                     <h1 className='text-4xl .box w-80 -mb-[30px]'><img  src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/me.png" alt="smile" /></h1>
                     <h1 className='text-4xl indent-3 text-center'>{t("I")}</h1>
                     <h1 className="sm:text-5xl font-extrabold text-xl md:max-w-[60%]  w-full text-center object-cover bg-[url('https://www.iconfinder.com/static/img/illustrations/marker2.svg?ba92f9ef8e')] bg- bg-no-repeat ">{t("gtext")}</h1>
                     <h1 className='sm:text-2xl text-md font-extralight md:w-full  sm:max-w-[60%] w-full text-center'>{t("vtext")}</h1>
+                    <h1><a href="/about_me"><Button className='dark:bg-white dark:text-gray-900'>{t("order")}</Button></a></h1>
                 </div>
             </section>
         </div>
