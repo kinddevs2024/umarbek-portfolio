@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useEffect,  } from "react";
 import {
   Navbar,
   MobileNav,
@@ -6,7 +6,6 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { MenuDefault } from "../utils/Switcherbtn";
 import { useTranslation } from 'react-i18next';
@@ -75,7 +74,7 @@ useEffect(() => {
           />
         </svg>
 
-        <a href={"/projects"} className="flex cursor-none items-center">
+        <a href="/projects" className="flex cursor-none items-center">
           {t("projects")}
         </a>
       </Typography>
@@ -99,7 +98,7 @@ useEffect(() => {
             fill="#90A4AE"
           />
         </svg>
-        <a href={"/about_me"} className="flex cursor-none items-center">
+        <a href="/about_me" className="flex cursor-none items-center">
           {t("aboutme")}
 
         </a>

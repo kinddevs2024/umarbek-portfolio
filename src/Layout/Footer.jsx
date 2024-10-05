@@ -1,8 +1,7 @@
 import { Typography, } from "@material-tailwind/react";
 import gsap from "gsap";
 import React, {  useLayoutEffect } from 'react'
-import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 
 const LINKS = [
   {

@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from 'react'
-import Cards from './Cards'
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 
