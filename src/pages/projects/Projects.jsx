@@ -76,7 +76,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "/public/BOT.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/BOT.png",
       p: "JavaScript 81.5% CSS 10.0% HTML8.5%",
       link: "https://github.com/kinddevs2024/Sadia-Contact",
       name: "Sadia-Contact",
@@ -87,7 +87,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/CRAPPO.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/CRAPPO.png",
       p: "JavaScript 100.0%",
       link: "https://github.com/kinddevs2024/Canculator",
       name: "CRAPPO",
@@ -98,7 +98,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/MY9.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/MY9.png",
       p: "JavaScript 100.0%",
       link: "https://github.com/kinddevs2024/Canculator",
       name: "MY9",
@@ -109,7 +109,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/Pixer.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/Pixer.png",
       p: "HTML 60.2% CSS 39.8%",
       link: "https://github.com/kinddevs2024/Pixer",
       name: "Pixer",
@@ -120,7 +120,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/TODO.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/TODO.png",
       p: "HTML 100.0%",
       link: "https://github.com/kinddevs2024/todo",
       name: "TODO",
@@ -131,7 +131,7 @@ const Projects = () => {
     },
     {
       imageLink:
-        "public/PORT.png",
+        "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/PORT.png",
       p: "JavaScript 94.2% CSS 4.9% HTML 0.9%",
       link: "https://github.com/kinddevs2024/umarbek-portfolio",
       name: "Portfolio",
