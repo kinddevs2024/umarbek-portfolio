@@ -4,7 +4,7 @@ import './App.css'
 import Loyaout from './Layout/Loyaout'
 import Home from './pages/Home/Home'
 import Aboute from './pages/About/Aboute'
-import { useState, useEffect } from "react";
+import { useState,  } from "react";
 import Eror from './pages/Eror-404/Eror'
 import Projects from './pages/projects/Projects'
 import About_me from './pages/about_me/About_me'
