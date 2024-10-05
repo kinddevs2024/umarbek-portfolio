@@ -152,7 +152,7 @@ const Projects = () => {
   });
   return (
     <>
-      <div className='flex flex-row container flex-wrap'>
+      <div className='flex flex-row container flex-wrap max-w-[1980px] justify-center  '>
 
 
 
@@ -161,7 +161,7 @@ const Projects = () => {
         {data.map(({ imageLink, p, link, name , linksite , data }, index) => (
           <div key={index} className='flex flex-wrap  m-4'>
 
-            <aside class="bg-black text-white aside flex flex-wrap container p-6 rounded-lg w-full max-w-lg font-mono">
+            <aside class="  bg-blue-gray-200  dark:bg-black text-white aside flex flex-wrap container p-6 rounded-lg w-full max-w-lg font-mono">
               <div class="flex justify-between items-center">
                 <div class="flex space-x-2 text-red-500">
                   <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -175,7 +175,7 @@ const Projects = () => {
                 <p class="text-white"></p>
                 <p class="text-white">{data}</p>
                 <Link to={link}><p class="text-green-400 cursor-none">{p}</p></Link>
-                <Link to={linksite}><img className='cursor-none' src={imageLink} alt="" /></Link>
+                <Link to={linksite}><img className='cursor-none rounded-md w-auto h-auto' src={imageLink} alt="" /></Link>
               </div>
             </aside>
           </div>

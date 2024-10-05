@@ -1,6 +1,6 @@
 import { Typography, } from "@material-tailwind/react";
 import gsap from "gsap";
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, {  useLayoutEffect } from 'react'
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 
@@ -23,7 +23,6 @@ const currentYear = new Date().getFullYear();
 
 
 export function Footer() {
-  const { t } = useTranslation("global");
 
        
   useLayoutEffect(() =>{
@@ -59,7 +58,7 @@ export function Footer() {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors text-gray-800 dark:text-gray-400 hover:text-blue-gray-900"
+                      className="py-1.5 font-normal cursor-none transition-colors text-gray-800 dark:text-gray-400 hover:text-blue-gray-900"
                     >
                       {link}
                     </Typography>
