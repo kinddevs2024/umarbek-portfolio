@@ -160,20 +160,20 @@ const Projects = () => {
         {data.map(({ imageLink, p, link, name , linksite , data }, index) => (
           <div key={index} className='flex flex-wrap  m-4'>
 
-            <aside class="  bg-blue-gray-200  dark:bg-black text-white aside flex flex-wrap container p-6 rounded-lg w-full max-w-lg font-mono">
-              <div class="flex justify-between items-center">
-                <div class="flex space-x-2 text-red-500">
-                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            <aside className="  bg-blue-gray-200  dark:bg-black text-white aside flex flex-wrap container p-6 rounded-lg w-full max-w-lg font-mono">
+              <div className="flex justify-between items-center">
+                <div className="flex space-x-2 text-red-500">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <p class="text-sm ml-3">{name}</p>
+                <p className="text-sm ml-3">{name}</p>
               </div>
-              <div class="mt-4">
-                <Link to={link}><p class="text-green-400  cursor-none">$ install project</p></Link>
-                <p class="text-white"></p>
-                <p class="text-white">{data}</p>
-                <Link to={link}><p class="text-green-400 cursor-none">{p}</p></Link>
+              <div className="mt-4">
+                <Link to={link}><p className="text-green-400  cursor-none">$ install project</p></Link>
+                <p className="text-white"></p>
+                <p className="text-white">{data}</p>
+                <Link to={link}><p className="text-green-400 cursor-none">{p}</p></Link>
                 <Link to={linksite}><img className='cursor-none rounded-md w-auto h-auto' src={imageLink} alt="" /></Link>
               </div>
             </aside>
