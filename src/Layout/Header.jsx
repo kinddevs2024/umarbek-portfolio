@@ -26,21 +26,6 @@ export function Header() {
 });
 
 
-useEffect(() => {
-  const handleScroll = () => {
-      if (window.scrollY > 50) {
-          setIsScrolled(true);
-      } else {
-          setIsScrolled(false);
-      }
-  };
-
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-      window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
-
 
   const [openNav, setOpenNav] = React.useState(false);
 
