@@ -29,48 +29,20 @@ const resources = {
 
 
 
-
-
-// if (!lang) {
-//     localStorage.setItem("language", "en");
-
-// } else {
-//     localStorage.getItem("language");
-
-// }
-
-
-// const lang = localStorage.setItem("language");
-// const langu = localStorage.getItem("language");
-
-
-
-
-
-// const handleLanguageChange = (event) => {
-//     const selectedLanguage = event.target.value;
-//     localStorage.setItem("language", selectedLanguage);
-//     i18n.changeLanguage(selectedLanguage);
-// };
-
-// const lan = () =>{
-//     if (!lang) {
-//         localStorage.setItem("language", "en");
-//     } else {
-//         localStorage.getItem("language");
-//     }
-
-
-// }
-
-i18n
-    .use(initReactI18next)
-    .init({
-        resources,
-        lng: "en" ,
-        interpolation: {
-            escapeValue: false,
-        },
-    });
+setTimeout(
+    
+    
+    i18n
+        .use(initReactI18next)
+        .init({
+            resources,
+            lng: localStorage.getItem("language"),  
+            interpolation: {
+                escapeValue: false,
+            },
+        })
+    
+    
+    , 2000);
 
 export default i18n;

@@ -42,7 +42,7 @@ export function Footer() {
               Umarbek Portfolio
             </NavLink>
           </Typography>
-          <div className="grid grid-cols-3 cursor-none justify-between gap-[40%]">
+          <div className="grid grid-cols-3 cursor-none justify-between gap-[20%]">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography

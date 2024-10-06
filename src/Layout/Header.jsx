@@ -11,6 +11,7 @@ import ThemeToggle from "./ThemeToggle";
 import { MenuDefault } from "../utils/Switcherbtn";
 import { useTranslation } from 'react-i18next';
 import gsap from "gsap";
+import LanguageSwitcher from "../utils/SwitcherLanguage";
 
 
 
@@ -20,14 +21,30 @@ import gsap from "gsap";
 
 export function Header() {
 
-  useEffect(() =>{
-    gsap.to(".heder",{rotation:0,  delay:2});
-    gsap.to(".heder",{ scale:1,  delay:1.5},);
-    gsap.to(".heder",{ scale:0 , delay:0},);
+  useEffect(() => {
+    gsap.to(".heder", { rotation: 0, delay: 2 });
+    gsap.to(".heder", { scale: 1, delay: 1.5 },);
+    gsap.to(".heder", { scale: 0, delay: 0 },);
 
-});
+  });
 
+  const { i18n } = useTranslation();
 
+  const lang = localStorage.getItem("language");
+
+  useLayoutEffect(() => {
+    if (!lang) {
+      localStorage.setItem("language", "en");
+    } else {
+      localStorage.getItem("language");
+    }
+  }, []);
+
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    localStorage.setItem("language", selectedLanguage);
+    i18n.changeLanguage(selectedLanguage);
+  };
 
   const [openNav, setOpenNav] = React.useState(false);
 

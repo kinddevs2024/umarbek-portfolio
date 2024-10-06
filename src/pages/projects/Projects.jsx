@@ -150,7 +150,7 @@ const Projects = () => {
   });
   return (
     <>
-      <div className='flex flex-row container flex-wrap'>
+      <div className='flex flex-row container justify-center flex-wrap'>
 
 
 

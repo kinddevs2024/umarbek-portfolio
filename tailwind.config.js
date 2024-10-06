@@ -24,6 +24,7 @@ export default withMT({
       colors: {
         'bg-dark': '#090F13',
         'bg-none': '#3D606E',
+
       },
     },
   },
