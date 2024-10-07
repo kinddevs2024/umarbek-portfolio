@@ -14,6 +14,14 @@ const global = {
     ruleru : "how to fill ?",
     tel : "tel or telegram nickname",
     mes : "message",
+    mess : "send message",
+    Info : "PERSONAL INFORMATION",
+    infodis : "Hello everyone, I'm Ulug'bekov Umarbek, I'm a front-end programmer, I have more than 1 year of experience in creating a website.",
+    name : "age",
+    period : "period",
+    date : "date",
+    infancy : "infancy",
+    kindergarten : "kindergarten" ,
 
 }
 

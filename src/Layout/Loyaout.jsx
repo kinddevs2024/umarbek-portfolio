@@ -25,8 +25,9 @@ const Loyaout = ({ children }) => {
         animation='none'
         hoveringAnimation='beat'
         mixBlendMode
+
         
-        zIndex={20}
+        zIndex={10000}
          /> 
         </div>
         

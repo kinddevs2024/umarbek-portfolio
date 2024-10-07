@@ -14,6 +14,14 @@ const global = {
     ruleru : "qanday qilib to'ldirish ?",
     tel : "tel yoki telegram laqab",
     mes : "xabar",
+    mess : "habar yuborish",
+    Info : "SHAXSIY MA'LUMOT",
+    infodis : "Hammaga Salom man Ulug'bekov umarbek frontend programmers man 1 yildan oshiqli Sait yasash boyicha opitga egaman",
+    name : "yosh",
+    period : "davr",
+    date : "sana",
+    infancy : "go'daklik",
+    kindergarten : "kindergarten" ,
 
 
 }

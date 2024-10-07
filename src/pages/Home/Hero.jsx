@@ -26,7 +26,7 @@ const Hero = () => {
                     <h1 className='text-4xl indent-3 text-center'>{t("I")}</h1>
                     <h1 className="sm:text-5xl font-extrabold text-xl md:max-w-[60%]  w-full text-center object-cover bg-[url('https://www.iconfinder.com/static/img/illustrations/marker2.svg?ba92f9ef8e')] bg- bg-no-repeat ">{t("gtext")}</h1>
                     <h1 className='sm:text-2xl text-md font-extralight md:w-full  sm:max-w-[60%] w-full text-center'>{t("vtext")}</h1>
-                    <h1><a href="/about_me"><Button className='dark:bg-white dark:text-gray-900'>{t("order")}</Button></a></h1>
+                    <h1><a href="/about_me"><Button className='dark:bg-white 	cursor-none dark:text-gray-900'>{t("order")}</Button></a></h1>
                 </div>
             </section>
         </div>

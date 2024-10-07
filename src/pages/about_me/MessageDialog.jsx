@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import axios from 'axios';
 import {
   Button,
@@ -16,9 +16,18 @@ import {
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Rule from './Rule';
+import gsap from 'gsap';
 
 const MessageDialog = () => {
 
+
+
+  useLayoutEffect(() =>{
+    gsap.to("Button",{rotation:0,  delay:2});
+    gsap.to(".mess",{ scale:1,  delay:1.4},);
+    gsap.to(".mess",{ scale:0 , delay:0},);
+
+});
 
   const { t } = useTranslation("global");
 
@@ -54,13 +63,13 @@ Massage : ${tel} `
   };
 
   return (
-    <div className=' cursor-default'>
-      <Button onClick={handleOpen}>Message Dialog</Button>
-      <Dialog className=' dark:bg-bg-dark bg-white cursor-default' open={open} size="xs" handler={handleOpen}>
-        <div className="flex  cursor-default items-center justify-between">
-          <DialogHeader className="flex flex-col items-start cursor-default">
+    <div className=' '>
+      <Button  className='dark:bg-gray-100 mess cursor-none dark:text-black' onClick={handleOpen}>{t("mess")}</Button>
+      <Dialog className='  dark:bg-bg-dark bg-white ' open={open} size="xs" handler={handleOpen}>
+        <div className="flex   items-center justify-between">
+          <DialogHeader className="flex flex-col items-start ">
             {""}
-            <Typography className="mb-1 cursor-default " variant="h4">
+            <Typography className="mb-1  text-wrap " variant="h4">
               {t("message")}<Link to={"https://t.me/kinddevs"}>{"kinddevs"}</Link>
             </Typography>
           </DialogHeader>
@@ -68,7 +77,7 @@ Massage : ${tel} `
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="mr-3 h-5 w-5 cursor-default"
+            className="mr-3 h-5 w-5"
             onClick={handleOpen}
           >
             <path
@@ -79,7 +88,7 @@ Massage : ${tel} `
           </svg>
         </div>
         <DialogBody>
-          <Typography className="mb-10 text-md -mt-7 cursor-default " variant="lead">
+          <Typography className="mb-10 text-md -mt-7  " variant="lead">
               <Rule/>
           </Typography>
           <div className="grid gap-6">
@@ -96,7 +105,7 @@ Massage : ${tel} `
               label={t("mes")} />
           </div>
         </DialogBody>
-        <DialogFooter className="space-x-2 cursor-default">
+        <DialogFooter className="space-x-2 ">
           <Button variant="text" className='text-red-700' onClick={handleOpen}>
             cancel
           </Button>

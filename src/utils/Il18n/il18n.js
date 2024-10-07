@@ -36,7 +36,7 @@ setTimeout(
         .use(initReactI18next)
         .init({
             resources,
-            lng: localStorage.getItem("language"),  
+            lng: localStorage.getItem("language")||"en",  
             interpolation: {
                 escapeValue: false,
             },

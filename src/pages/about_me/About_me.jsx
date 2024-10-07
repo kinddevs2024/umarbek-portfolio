@@ -1,12 +1,14 @@
 import React from 'react'
-import MessageDialog from './MessageDialog'
+import Lichnayainfarmatsiya from './Lichnayainfarmatsiya'
+import Table from './Table'
 
 const About_me = () => {
   return (
-    <div className=' container  mt-4 w-full h-full flex  justify-center items-center'>
-      <MessageDialog/>
+    <>
+      <Lichnayainfarmatsiya/>
+      <Table/>
       
-    </div>
+    </>
   )
 }
 
