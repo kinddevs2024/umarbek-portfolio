@@ -14,11 +14,11 @@ const Loyaout = ({ children }) => {
         <Header />
         {children}
         <Footer />
-        <div className=' fixed  hidden  sm:block top-[30%] '>
+        <div className=' fixed  hidden  xl:block top-[30%] '>
 
           <Card />
         </div>
-        <div className=' hidden sm:flex'>
+        <div className=' hidden xl:flex'>
           <Cursor
             size='xl'
             hasDot

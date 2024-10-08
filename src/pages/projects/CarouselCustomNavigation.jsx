@@ -24,6 +24,18 @@ export function CarouselCustomNavigation() {
     const { t } = useTranslation("global");
 
     const data = [
+        
+        {
+            imageLink:
+                "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/2.png",
+            p: "JavaScript 94.2% CSS 4.9% HTML 0.9%",
+            link: "https://github.com/kinddevs2024/umarbek-portfolio",
+            name: "Portfolio",
+            linksite: "https://umarbek-portfolio.vercel.app/",
+            data: "data: 2024.02.20",
+
+
+        },
 
         {
             imageLink:
@@ -135,17 +147,6 @@ export function CarouselCustomNavigation() {
 
 
         },
-        {
-            imageLink:
-                "https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/2.png",
-            p: "JavaScript 94.2% CSS 4.9% HTML 0.9%",
-            link: "https://github.com/kinddevs2024/umarbek-portfolio",
-            name: "Portfolio",
-            linksite: "https://umarbek-portfolio.vercel.app/",
-            data: "data: 2024.02.20",
-
-
-        },
     ];
 
     return (
@@ -173,22 +174,22 @@ export function CarouselCustomNavigation() {
                 <div key={index} >
 
                     <div>
-                        <img src={imageLink} className=" rounded-xl" alt="" />
                         <StyledWrapper className=" " >
-                            <div className="card">
+                            <div className="card dark:bg-[#3d606eb4]">
                                 <div className="align">
                                     <span className="red" />
                                     <span className="yellow" />
                                     <span className="green" />
                                 </div>
+                                <img src={imageLink} className=" rounded-xl" alt="" />
 
-                                <h1> {name}</h1>
-                                <p>
+                                <h1 className=" text-center "> {name}</h1>
+                                <h1 >
                                     {p} <br />
                                     {data}<br />
                                     {linksite}<br />
                                     {link}<br />
-                                </p>
+                                </h1>
                             </div>
                         </StyledWrapper>
                     </div>
@@ -200,24 +201,20 @@ export function CarouselCustomNavigation() {
 
 const StyledWrapper = styled.div`
   .card {
-  height: 120px;
+  height: 100%;
   padding: 0.5rem;
-  background: rgba(198, 198, 198, 0.34);
+  background: #3D606E;
   border-radius: 8px;
   backdrop-filter: blur(5px);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.623);
   border-left: 2px  rgba(255, 255, 255, 0.545) outset;
   box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-  transform: skewX(10deg);
   transition: .4s;
   overflow: hidden;
   color: white;
 }
 
-.card:hover {
-  height: 254px;
-  transform: skew(0deg);
-}
+
 
 .align {
   padding: 1rem;
@@ -252,9 +249,7 @@ const StyledWrapper = styled.div`
 }
 
 .card h1 {
-  text-align: center;
   margin: 1.3rem;
-  color: rgb(218, 244, 237);
   text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
 }
 
