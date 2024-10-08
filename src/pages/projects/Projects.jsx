@@ -11,14 +11,14 @@ const Projects = () => {
 
 
   useLayoutEffect(() => {
-    gsap.to("aside", { rotation: 0, delay: 2 });
-    gsap.to("aside", { scale: 1, delay: 1.4 },);
-    gsap.to("aside", { scale: 0, delay: 0 },);
+    gsap.to(".aside", { rotation: 0, delay: 2 });
+    gsap.to(".aside", { scale: 1, delay: 1.4 },);
+    gsap.to(".aside", { scale: 0, delay: 0 },);
 
   });
   return (
     <>
-      <div className='flex w-full h-full justify-center items-center mt-10'>
+      <div className='flex w-full h-full aside justify-center items-center mt-10'>
         <CarouselCustomNavigation />
       </div>
     </>

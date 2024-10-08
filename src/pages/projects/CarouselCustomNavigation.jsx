@@ -2,26 +2,17 @@ import { Carousel } from "@material-tailwind/react";
 import styled from "styled-components";
 import React, { useLayoutEffect } from 'react'
 import gsap from 'gsap';
-import { Link } from 'react-router-dom';
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-    Button,
-} from "@material-tailwind/react";
 import { useTranslation } from 'react-i18next';
 
 
 export function CarouselCustomNavigation() {
     useLayoutEffect(() => {
-        gsap.to("aside", { rotation: 0, delay: 2 });
-        gsap.to("aside", { scale: 1, delay: 1.4 },);
-        gsap.to("aside", { scale: 0, delay: 0 },);
+        gsap.to(".StyledWrapper", { rotation: 0, delay: 2 });
+        gsap.to(".StyledWrapper", { scale: 1, delay: 1.4 },);
+        gsap.to(".StyledWrapper", { scale: 0, delay: 0 },);
 
     });
 
-    const { t } = useTranslation("global");
 
     const data = [
         
@@ -148,6 +139,7 @@ export function CarouselCustomNavigation() {
 
         },
     ];
+    const { t } = useTranslation("global");
 
     return (
         <Carousel
@@ -174,7 +166,7 @@ export function CarouselCustomNavigation() {
                 <div key={index} >
 
                     <div>
-                        <StyledWrapper className=" " >
+                        <StyledWrapper className="StyledWrapper " >
                             <div className="card dark:bg-[#3d606eb4]">
                                 <div className="align">
                                     <span className="red" />
