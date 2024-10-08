@@ -78,7 +78,7 @@ export function Header() {
           />
         </svg>
 
-        <NavLink to={"/projects"} className="flex cursor-none items-center">
+        <NavLink to={"/projects"} className="flex cursor-none text-[16px] items-center">
           {t("projects")}
         </NavLink>
       </Typography>
@@ -102,7 +102,7 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/about_me"} className="flex cursor-none items-center">
+        <NavLink to={"/about_me"} className="flex cursor-none text-[16px] items-center">
           {t("aboutme")}
 
         </NavLink>
@@ -129,7 +129,7 @@ export function Header() {
             fill="#90A4AE"
           />
         </svg>
-        <NavLink to={"/get_in_touch"} className="flex cursor-none items-center">
+        <NavLink to={"/get_in_touch"} className="flex cursor-none text-[16px] items-center">
           {t("getintouch")}
 
         </NavLink>
@@ -141,8 +141,8 @@ export function Header() {
 
 
   return (
-    <Navbar className=" backdrop-blur-sm heder	 sticky top-3 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
-      <div className="  mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className=" backdrop-blur-sm 	 sticky top-3 z-20  mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 container">
+      <div className="   mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
@@ -153,7 +153,7 @@ export function Header() {
             <img className=" w-auto h-[30px]" src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/1-Photoroom.png" alt="home" />
           </NavLink>
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden heder lg:block">{navList}</div>
         <div className="flex items-center gap-x-1">
 
           <div

@@ -34,7 +34,7 @@ export function Footer() {
 });
 
   return (
-    <footer data-aos="zoom-in" className=" mt-5 relative h-auto dark:text-white w-full">
+    <footer data-aos="zoom-in" className=" mt-20 relative h-auto dark:text-white w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="dark:text-white mb-6">

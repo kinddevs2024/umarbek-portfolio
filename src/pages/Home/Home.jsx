@@ -1,6 +1,6 @@
 import React from 'react'
-import Links from './Links';
 import Hero from './Hero';
+import Card from './Card';
 
 export function Home() {
 
@@ -10,8 +10,6 @@ export function Home() {
     <>
       <div>
         <Hero />
-        <Links />
-
       </div>
     </>
   );

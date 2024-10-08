@@ -1,0 +1,22 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Linkss = () => {
+  return (
+    <div id='fff' className=' static top-[50%]    flex justify-center items-center border-black dark:bg-white   duration-300'>
+      <div className=' container flex flex-col gap-[20%] justify-center items-center'>
+        <Link to={"https://github.com/uumarbek"}>
+          <img className='w-[25px] bg-white rounded-full cursor-none' src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/main/public/github.png" alt="githup" />
+        </Link>
+        <Link to={"https://www.instagram.com/uumar_bek/"}>
+          <img className='w-[25px] bg-white rounded-full cursor-none' src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/instagram.png?raw=true" alt="githup" />
+        </Link>
+        <Link to={"https://t.me/kinddevs"}>
+          <img className='w-[25px] bg-white rounded-fullx cursor-none' src="https://github.com/kinddevs2024/umarbek-portfolio/blob/main/public/telegram.png?raw=true" alt="githup" />
+        </Link>
+      </div>
+    </div>
+  )
+}
+
+export default Linkss;

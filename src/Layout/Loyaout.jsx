@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Cursor } from "react-custom-cursors";
 import "react-custom-cursors/dist/index.css";
+import Card from '../pages/Home/Card';
 
 
 const Loyaout = ({ children }) => {
@@ -13,24 +14,28 @@ const Loyaout = ({ children }) => {
         <Header />
         {children}
         <Footer />
-        <div className=' hidden sm:flex'>
-         <Cursor 
-        size='xl'
-        hasDot
-        isHollow
-        dotColor='#ffffff'
-        hasCursor
-        color='#ffffff'
-        speed='fast'
-        animation='none'
-        hoveringAnimation='beat'
-        mixBlendMode
+        <div className=' fixed  hidden  sm:block top-[30%] '>
 
-        
-        zIndex={10000}
-         /> 
+          <Card />
         </div>
-        
+        <div className=' hidden sm:flex'>
+          <Cursor
+            size='xl'
+            hasDot
+            isHollow
+            dotColor='#ffffff'
+            hasCursor
+            color='#ffffff'
+            speed='fast'
+            animation='none'
+            hoveringAnimation='beat'
+            mixBlendMode
+
+
+            zIndex={10000}
+          />
+        </div>
+
       </div>
 
     </>
