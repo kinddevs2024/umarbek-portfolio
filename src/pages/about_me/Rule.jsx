@@ -25,9 +25,9 @@ const Rule = () => {
 
     return (
         <div>
-            <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)}>{t("ruleru")}</AccordionHeader>
-                <AccordionBody>
+            <Accordion className='dark:text-white text-bg-dark' open={open === 1} icon={<Icon id={1} open={open}/>}>
+                <AccordionHeader onClick={() => handleOpen(1)} className='dark:text-white text-bg-dark'>{t("ruleru")}</AccordionHeader>
+                <AccordionBody  >
                     {t("rule")}
                 </AccordionBody>
             </Accordion>

@@ -65,11 +65,10 @@ Massage : ${tel} `
   return (
     <div className=' '>
       <Button  className='dark:bg-gray-100 mess cursor-none dark:text-black' onClick={handleOpen}>{t("mess")}</Button>
-      <Dialog className='  dark:bg-bg-dark bg-white ' open={open} size="xs" handler={handleOpen}>
+      <Dialog className='  dark:bg-bg-dark bg-white dark:text-white text-bg-dark ' open={open} size="xs" handler={handleOpen}>
         <div className="flex   items-center justify-between">
           <DialogHeader className="flex flex-col items-start ">
-            {""}
-            <Typography className="mb-1  text-wrap " variant="h4">
+            <Typography className="mb-1 dark:text-white text-bg-dark max-w-64 text-wrap " variant="h4">
               {t("message")}<Link to={"https://t.me/kinddevs"}>{"kinddevs"}</Link>
             </Typography>
           </DialogHeader>
@@ -95,12 +94,13 @@ Massage : ${tel} `
             <Input
 
               label={t("tel")}
-              className=' '
+              className=' dark:text-white text-bg-dark'
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <Textarea
               value={tel}
+              className='dark:text-white text-bg-dark'
               onChange={(e) => setTel(e.target.value)}
               label={t("mes")} />
           </div>

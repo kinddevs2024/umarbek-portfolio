@@ -22,27 +22,22 @@ const Table = () => {
     {
       name: "0+",
       job: t("infancy"),
-      date: "23/04/18",
+      date: "10/05/11",
     },
     {
-      name: "4-5",
+      name: "4-6+",
       job: t("kindergarten"),
-      date: "23/04/18",
+      date: "14/06/23",
     },
     {
-      name: "Laurent Perrier",
-      job: "Executive",
-      date: "19/09/17",
+      name: "6-11+",
+      job: t("firstschool"),
+      date: "16/09/01",
     },
     {
-      name: "Michael Levi",
-      job: "Developer",
-      date: "24/12/08",
-    },
-    {
-      name: "Richard Gran",
-      job: "Manager",
-      date: "04/10/21",
+      name: "12-14+",
+      job: t("highschool"),
+      date: "22/09/03",
     },
   ];
   return (

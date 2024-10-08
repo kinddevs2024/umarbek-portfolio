@@ -21,7 +21,9 @@ const global = {
     period : "davr",
     date : "sana",
     infancy : "go'daklik",
-    kindergarten : "kindergarten" ,
+    kindergarten : "bolalar bog'chasi" ,
+    firstschool : "boshlang'ich maktab" ,
+    highschool : "o'rta maktab" ,
 
 
 }

@@ -22,6 +22,9 @@ const global = {
     date : "дата",
     infancy : "младенчество",
     kindergarten : "детский сад" ,
+    firstschool : "Начальная школа" ,
+    highschool : "средняя школа" ,
+
 
 }
 

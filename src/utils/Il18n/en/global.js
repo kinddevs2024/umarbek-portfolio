@@ -22,6 +22,8 @@ const global = {
     date : "date",
     infancy : "infancy",
     kindergarten : "kindergarten" ,
+    firstschool : "primary school" ,
+    highschool : "high school" ,
 
 }
 
