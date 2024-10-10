@@ -1,17 +1,14 @@
 import { Carousel } from "@material-tailwind/react";
 import styled from "styled-components";
-import React, { useLayoutEffect } from 'react'
-import gsap from 'gsap';
+import React, {  } from 'react'
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
+import Button from "./Button";
+import Buttono from "./Buttono";
 
 
 export function CarouselCustomNavigation() {
-    useLayoutEffect(() => {
-        gsap.to(".StyledWrapper", { rotation: 0, delay: 2 });
-        gsap.to(".StyledWrapper", { scale: 1, delay: 1.4 },);
-        gsap.to(".StyledWrapper", { scale: 0, delay: 0 },);
 
-    });
 
 
     const data = [
@@ -167,20 +164,23 @@ export function CarouselCustomNavigation() {
 
                     <div>
                         <StyledWrapper className="StyledWrapper " >
-                            <div className="card dark:bg-[#3d606eb4]">
+                            <div className="card dark:bg-[#3d606eb4] m-10">
                                 <div className="align">
                                     <span className="red" />
                                     <span className="yellow" />
                                     <span className="green" />
                                 </div>
+
+                                <Link to={linksite}>
+                                
                                 <img src={imageLink} className=" rounded-xl" alt="" />
+                                </Link>
 
                                 <h1 className=" text-center "> {name}</h1>
-                                <h1 >
-                                    {p} <br />
+                                <h1 className=" flex w-full flex-col  items-start  gap-2" >
                                     {data}<br />
-                                    {linksite}<br />
-                                    {link}<br />
+                                    {/* <Button/> */}
+                                    <Buttono linksite={linksite}/>
                                 </h1>
                             </div>
                         </StyledWrapper>

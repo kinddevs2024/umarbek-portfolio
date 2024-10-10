@@ -16,14 +16,11 @@ const Lichnayainfarmatsiya = () => {
 
     });
 
-
-
-
     return (
         <div className='container '>
             <div className='flex   p-12  justify-evenly     mb-[5%] flex-wrap   w-full mt-[8%] '>
                 <div>
-                    <h1 className='text-4xl max-w-[500px]  .box w-80 '><img src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/me.png" alt="smile" /></h1>
+                    <h1 className='text-4xl max-w-[500px]   w-80 '><img src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/me.png" alt="smile" /></h1>
                 </div>
                 <div className='flex justify-center max-w-[400px]   xl:items-end items-center flex-col  gap-6'>
                     <h1 className='text-4xl indent-3 xl:text-end  text-center '>{t("Info")}</h1>
