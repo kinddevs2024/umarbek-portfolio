@@ -48,7 +48,7 @@ function Login1() {
             })
     };
     return (
-        <section className=" .section px-8">
+        <section className="  mb-20 .section px-8">
             <div className="container mx-auto h-screen grid place-items-center">
                 <Card
                     shadow={false}
