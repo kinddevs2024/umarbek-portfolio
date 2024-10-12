@@ -1,15 +1,17 @@
 import React from 'react'
 import Hero from './Hero';
-import Card from './Card';
+import { Analytics } from "@vercel/analytics/react"
+
 
 export function Home() {
 
 
-  
+
   return (
     <>
       <div>
         <Hero />
+        <Analytics />
       </div>
     </>
   );

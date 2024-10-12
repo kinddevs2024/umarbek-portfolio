@@ -25,13 +25,13 @@ const currentYear = new Date().getFullYear();
 export function Footer() {
   const { t } = useTranslation("global");
 
+       
+  useLayoutEffect(() =>{
+    gsap.to("footer",{rotation:0,  delay:2});
+    gsap.to("footer",{ scale:1,  delay:1.5},);
+    gsap.to("footer",{ scale:0 , delay:0},);
 
-  useLayoutEffect(() => {
-    gsap.to("footer", { rotation: 0, delay: 2 });
-    gsap.to("footer", { scale: 1, delay: 1.5 },);
-    gsap.to("footer", { scale: 0, delay: 0 },);
-
-  });
+});
 
   return (
     <footer data-aos="zoom-in" className=" mt-20 relative h-auto dark:text-white w-full">
@@ -69,15 +69,11 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
-          <Typography
+          <Typography 
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 dark:text-white md:mb-0"
           >
-            <Link to={"/admin"}>
-              &copy; {currentYear}
-            </Link>
-            <Link to={"https://github.com/kinddevs2024"}>Umarbek portfolio
-            </Link>
+            &copy; {currentYear} <Link  to={"https://github.com/kinddevs2024"}>Umarbek portfolio</Link>
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 dark:text-white sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
