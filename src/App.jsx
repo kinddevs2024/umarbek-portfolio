@@ -20,7 +20,7 @@ function App() {
       <Loyaout>
         <Routes >
           <Route path='/' element={<Home />} />
-          <Route path='/about' element={<Aboute />} />
+          <Route path='/admin' element={<Aboute />} />
           <Route path='*' element={<Eror />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about_me' element={<About_me />} />
