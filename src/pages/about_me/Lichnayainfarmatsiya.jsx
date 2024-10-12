@@ -20,7 +20,7 @@ const Lichnayainfarmatsiya = () => {
         <div className='container '>
             <div className='flex   p-12  justify-evenly     mb-[5%] flex-wrap   w-full mt-[8%] '>
                 
-                    <h1 className='text-4xl max-w-[500px]   w-80 '>
+                    <h1 className='text-4xl max-w-[500px]    '>
                         <img src="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/me.png" alt="smile" />
                     </h1>
             
