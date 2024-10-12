@@ -8,7 +8,7 @@ const About_me = () => {
     <>
       <Lichnayainfarmatsiya/>
       <DefaultGallery/>
-      <Table/>
+      {/* <Table/> */}
       
     </>
   )

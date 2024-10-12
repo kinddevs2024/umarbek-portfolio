@@ -86,18 +86,18 @@ const DefaultGallery = () => {
             <h1 className='m-10 '>
             {t("len")}
             </h1>
-        <div className="grid grid-cols-1 container   mb-5 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 container   mb-20 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {data.map(({ imageLink , info }, index) => (
                 <div key={index}>
                     <StyledWrapper>
-                        <div className="card">
+                        <div className="card  s mb-5 z-0">
 
                             <img
-                                className="h-40 w-full max-w-full rounded-lg object-contain  object-center"
+                                className="h-40 w-full -z-10 max-w-full rounded-xl object-contain  object-center"
                                 src={imageLink}
                                 alt="gallery-photo"
                             />
-                            <button className="card-button">{info}</button>
+                            <button className="card-button  hover:z-10 ">{info}</button>
                         </div>
                     </StyledWrapper>
                 </div>
