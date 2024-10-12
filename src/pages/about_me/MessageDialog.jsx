@@ -9,9 +9,6 @@ import {
   Input,
   Textarea,
   Typography,
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
 } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -65,10 +62,10 @@ Massage : ${tel} `
   return (
     <div className=' '>
       <Button  className='dark:bg-gray-100 mess cursor-none dark:text-black' onClick={handleOpen}>{t("mess")}</Button>
-      <Dialog className='  dark:bg-bg-dark bg-white dark:text-white text-bg-dark ' open={open} size="xs" handler={handleOpen}>
+      <Dialog className='   ' open={open} size="xs" handler={handleOpen}>
         <div className="flex   items-center justify-between">
           <DialogHeader className="flex flex-col items-start ">
-            <Typography className="mb-1 dark:text-white text-bg-dark max-w-64 text-wrap " variant="h4">
+            <Typography className="mb-1 max-w-64 text-wrap " variant="h4">
               {t("message")}<Link to={"https://t.me/kinddevs"}>{"kinddevs"}</Link>
             </Typography>
           </DialogHeader>
@@ -94,13 +91,13 @@ Massage : ${tel} `
             <Input
 
               label={t("tel")}
-              className=' dark:text-white text-bg-dark'
+              className=' '
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <Textarea
               value={tel}
-              className='dark:text-white text-bg-dark'
+              className=''
               onChange={(e) => setTel(e.target.value)}
               label={t("mes")} />
           </div>

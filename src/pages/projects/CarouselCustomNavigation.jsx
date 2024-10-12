@@ -142,11 +142,11 @@ export function CarouselCustomNavigation() {
         <Carousel
             className="rounded-xl   max-w-[1200px]"
             navigation={({ setActiveIndex, activeIndex, length }) => (
-                <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                <div className="absolute bottom-4 left-2/4 z-50 flex  -translate-x-2/4 gap-2">
                     {new Array(length).fill("").map((_, i) => (
                         <span
                             key={i}
-                            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-black dark:bg-white" : "w-4 dark:bg-white/50 bg-bg-none"
                                 }`}
                             onClick={() => setActiveIndex(i)}
                         />
@@ -164,7 +164,7 @@ export function CarouselCustomNavigation() {
 
                     <div>
                         <StyledWrapper className="StyledWrapper " >
-                            <div className="card dark:bg-[#3d606eb4] m-10">
+                            <div className="card dark:bg-[#3d606eb4] m-20">
                                 <div className="align">
                                     <span className="red" />
                                     <span className="yellow" />

@@ -27,6 +27,7 @@ const global = {
     open: "open site",
     c: "Copied",
     len: "Programming languages ​​that i know",
+    otp: "to contact me send a message through the site or through social networks",
 }
 
 export default global;

@@ -1,8 +1,11 @@
 import React from 'react'
+import Login1 from './Login1'
 
 const Get_in_touch = () => {
   return (
-    <div>Get_in_touch</div>
+    <>
+    <Login1/>
+    </>
   )
 }
 

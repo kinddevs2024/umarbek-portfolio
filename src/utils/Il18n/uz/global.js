@@ -27,7 +27,7 @@ const global = {
     open: "veb-saytni oching",
     c: "Copied",
     len: "Men bilgan dasturlash tillari",
-
+    otp : "men bilan bog'lanish uchun sayt yoki satianie tarmog'i orqali xabar yuboring",
 
 }
 
