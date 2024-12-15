@@ -79,6 +79,30 @@ const DefaultGallery = () => {
                 info : "Canva",
 
         },
+        {
+            imageLink:
+                "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+            info: "C++",
+
+        },
+        {
+            imageLink:
+                "https://i.sstatic.net/vY5dQ.png",
+            info: "exe",
+
+        },
+        {
+            imageLink:
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTE00mdF5v81iFLUDdTovj9hLJ_pLvmviB4w&s",
+            info: "telegram bot",
+
+        },
+        {
+            imageLink:
+                "https://cdn.iconscout.com/icon/premium/png-256-thumb/crud-5226001-4358333.png?f=webp&w=256",
+            info: "CRUD",
+
+        },
     ];
 
     return (

@@ -27,7 +27,7 @@ const Lichnayainfarmatsiya = () => {
                 <div className='flex justify-center max-w-[400px]   xl:items-end items-center flex-col  gap-6'>
                     <h1 className='text-4xl indent-3 xl:text-end  text-center '>{t("Info")}</h1>
                     <h1 className="sm:text-xl font-extrabold text-md   object-cover xl:text-end  text-center">{t("infodis")}</h1>
-                    <MessageDialog />
+                    <Button><a href="https://raw.githubusercontent.com/kinddevs2024/umarbek-portfolio/refs/heads/main/public/resume.pdf">Resume</a></Button>
                 </div>
 
             </div>
