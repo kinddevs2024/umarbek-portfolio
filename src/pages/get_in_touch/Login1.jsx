@@ -99,7 +99,7 @@ function Login1() {
                                 send message
                                 <img className="h-6" src="https://img.icons8.com/color/480/telegram-app--v1.png" alt="telegram" />
                             </Button>
-                            <Link to={"https://www.instagram.com/uumar_bek/"}>
+                            <Link to={"https://www.instagram.com/charityhends"}>
                                 <Button
                                     variant="outlined"
                                     size="lg"
